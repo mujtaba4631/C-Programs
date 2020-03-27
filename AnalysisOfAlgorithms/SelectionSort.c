@@ -35,17 +35,16 @@ void selectionSort(int array[], int lenght)
     	    for(i = 1 ;i <= j; i++)
     	    {
 			
-			  	if(array[i] > largest)
-				{
-					largest = array[i];
-					pos = i;	
-				}
-		    }
-				
+	       if(array[i] > largest)
+	       {
+		largest = array[i];
+		pos = i;	
+        	}
+       	     }
 			
-				//Swapping
-				array[pos]=array[j];
-				array[j]=largest;			
-		
-		}
+			
+	   //Swapping
+	   array[pos]=array[j];
+	   array[j]=largest;			
+        }
 }
